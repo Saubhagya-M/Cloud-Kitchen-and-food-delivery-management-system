@@ -38,7 +38,6 @@ This project manages the full order lifecycle for a cloud kitchen / food deliver
 ```text
 Cloud-Kitchen-and-food-delivery-management-system/
 │
-├── venv/                        # Virtual environment (not committed to git)
 │
 ├── pages/
 │   ├── 0_Customers.py           # Add / view customers
