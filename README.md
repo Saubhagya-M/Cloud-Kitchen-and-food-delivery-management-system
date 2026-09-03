@@ -139,7 +139,7 @@ Open the following files and update the connection details to match your local M
 ```python
 DB_HOST = "localhost"
 DB_USER = "root"
-DB_PASSWORD = "yourpassword"
+DB_PASSWORD = "your_password"
 DB_NAME = "cloud_kitchen"
 ```
 
