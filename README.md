@@ -174,8 +174,8 @@ Streamlit will open automatically in your browser (usually at `http://localhost:
 To wipe all data and start fresh (structure, triggers, and views remain untouched):
 
 ```bash
-python database/reset_data.py
-python database/seed_data.py   # optional, reload sample data
+python reset_data.py
+python seed_data.py   # optional, reload sample data
 ```
 
 ---
