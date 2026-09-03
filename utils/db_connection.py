@@ -4,10 +4,11 @@ import streamlit as st
 
 def get_connection():
     return mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="root",
-        database="cloud_kitchen"
+        host=st.secrets["mysql"]["host"],
+        user=st.secrets["mysql"]["user"],
+        password=st.secrets["mysql"]["password"],
+        database=st.secrets["mysql"]["database"],
+        port=int(st.secrets["mysql"].get("port", 3306))
     )
 
 def run_query(query, params=None):
