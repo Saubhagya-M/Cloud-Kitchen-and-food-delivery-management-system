@@ -35,31 +35,30 @@ This project manages the full order lifecycle for a cloud kitchen / food deliver
 
 ## 🗂️ Project Structure
 
-```
-cloud_kitchen_app/
+```text
+Cloud-Kitchen-and-food-delivery-management-system/
 │
 ├── venv/                        # Virtual environment (not committed to git)
 │
-├── database/
-│   ├── schema.sql                # Reference copy of all CREATE TABLE / TRIGGER / VIEW statements
-│   ├── db_setup.py                # Creates database, tables, triggers, and views
-│   ├── seed_data.py                # Inserts sample data for testing/demo
-│   └── reset_data.py                # Wipes all table data (keeps structure intact)
+├── pages/
+│   ├── 0_Customers.py           # Add / view customers
+│   ├── 1_Restaurants.py         # Add restaurants & menu items
+│   ├── 2_Orders.py              # Place orders, update order status
+│   ├── 3_Drivers.py             # Add drivers, toggle availability
+│   ├── 4_Payments.py            # Record & update payment status
+│   └── 5_Dashboard.py           # Live metrics from SQL Views
 │
 ├── utils/
-│   └── db_connection.py            # Reusable run_query() / execute_query() helper functions
+│   ├── __init__.py              # Python package initializer
+│   └── db_connection.py         # Reusable run_query() / execute_query() helper functions
 │
-├── pages/
-│   ├── 0_Customers.py               # Add / view customers
-│   ├── 1_Restaurants.py             # Add restaurants & menu items
-│   ├── 2_Orders.py                  # Place orders, update order status
-│   ├── 3_Drivers.py                 # Add drivers, toggle availability
-│   ├── 4_Payments.py                # Record & update payment status
-│   └── 5_Dashboard.py               # Live metrics from SQL Views
-│
-├── app.py                          # Main entry point / landing page
-├── requirements.txt                # Python dependencies
-└── README.md                       # You are here
+├── app.py                       # Main entry point / landing page
+├── db_setup.py                  # Creates database, tables, triggers, and views
+├── seed_data.py                 # Inserts sample data for testing/demo
+├── reset_data.py                # Wipes all table data (keeps structure intact)
+├── schema.sql                   # Reference copy of all CREATE TABLE / TRIGGER / VIEW statements
+├── requirements.txt             # Python dependencies
+└── README.md
 ```
 
 ---
