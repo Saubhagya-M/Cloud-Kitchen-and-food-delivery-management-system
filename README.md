@@ -131,9 +131,9 @@ plotly
 ### 4. Configure your database credentials
 
 Open the following files and update the connection details to match your local MySQL setup:
-- `database/db_setup.py`
-- `database/seed_data.py`
-- `database/reset_data.py`
+- `db_setup.py`
+- `seed_data.py`
+- `reset_data.py`
 - `utils/db_connection.py`
 
 ```python
@@ -148,7 +148,7 @@ DB_NAME = "cloud_kitchen"
 Make sure MySQL is running, then:
 
 ```bash
-python database/db_setup.py
+python db_setup.py
 ```
 
 This creates the database, all 10 tables, both triggers, and all 3 views.
@@ -156,7 +156,7 @@ This creates the database, all 10 tables, both triggers, and all 3 views.
 ### 6. (Optional) Load sample data
 
 ```bash
-python database/seed_data.py
+python seed_data.py
 ```
 
 ### 7. Run the app
